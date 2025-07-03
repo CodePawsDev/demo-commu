@@ -45,14 +45,84 @@
         .cta-button:hover {
             background-color: #0056b3;
         }
+                .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+       .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Welcome to Our Platform</h1>
-        <p>Discover amazing features and solutions for your needs</p>
-        <a href="#get-started" class="cta-button">Get Started</a>
-    </div>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">OurSite</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#get-started">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build More Than Just Ideas</h1>
+            <p>Your all-in-one platform for productivity, growth, and success.</p>
+            <a href="#get-started" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+</header>
+
 
     <div class="container">
         <h2>Why Choose Us?</h2>
@@ -71,5 +141,27 @@
             </div>
         </div>
     </div>
+        <div class="container" id="get-started">
+        <h2>Choose Your Plan</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Basic Plan</h3>
+                <p>Essential tools for individuals</p>
+                <p><strong>$9.99/month</strong></p>
+                <a href="#" class="cta-button">Subscribe</a>
+            </div>
+            <div class="feature-card">
+                <h3>Pro Plan</h3>
+                <p>Advanced features for professionals</p>
+                <p><strong>$19.99/month</strong></p>
+                <a href="#" class="cta-button">Subscribe</a>
+            </div>
+            <div class="feature-card">
+                <h3>Enterprise Plan</h3>
+                <p>Full suite for businesses and teams</p>
+                <p><strong>Contact Us</strong></p>
+                <a href="#" class="cta-button">Get a Quote</a>
+            </div>
+        </div>
 </body>
 </html>
